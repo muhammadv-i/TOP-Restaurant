@@ -1,5 +1,7 @@
 import loadPage from './content.js';
+import welcome from './welcome.js';
 import menu from './menu.js';
+import contact from './contact.js';
 
 loadPage();
 
@@ -39,8 +41,15 @@ for (let i = 0; i < tabs.childElementCount; i++) {
             
             content.innerHTML = '';
             switch (e.target.dataset.tab) {
+                case 'welcome!':
+                    welcome();
+                    break;
                 case 'menu': 
                     menu();
+                    break;
+                case 'contact':
+                    contact();
+                    break;
             }
             
             for (tab of tabs.children) {

@@ -16,3 +16,8 @@ div {
 .active {
     background: gray;
 }
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

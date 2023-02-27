@@ -1,3 +1,5 @@
+import { contentDiv } from './content.js';
+
 function dish(name, parent) {
     const dish = document.createElement('div');
     const dname = document.createElement('h3');
